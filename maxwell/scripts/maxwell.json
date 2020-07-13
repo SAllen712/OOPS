@@ -1,0 +1,23 @@
+{
+    "Maxwell":{
+      "name":"Maxwell",
+      "id":1,
+      "members":[
+        {
+          "name":"GridPoints",
+	  "type":"int",
+	  "min":7,
+	  "max":128000,
+	  "default":101
+	},
+	{
+	  "name":"GaussianSigma",
+	  "type":"double",
+  	  "min":1e-3,
+	  "max":1e6,
+	  "default":0.125
+	}
+      ]
+    }
+  }
+  
