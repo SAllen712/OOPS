@@ -26,7 +26,7 @@ Maxwell::~Maxwell(){
 }
 
 //Right hand solver
-void Maxwell::rhs(const Grid &grid, double **u, double **dtu) {
+void Maxwell::rhs(const Grid &grid, double **u, double **dtu){
 
 
     unsigned int nb = domain->getGhostPoints();

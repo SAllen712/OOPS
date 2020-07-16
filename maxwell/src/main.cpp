@@ -42,8 +42,8 @@ int main (int argc, char* argv[]){
     PolynomialInterpolator interpolator = PolynomialInterpolator(4);
 
     Maxwell ode = Maxwell(domain, rk4);
-    ode.setParameters(&params);
     ode.setInterpolator(&interpolator);
+    ode.setParameters(&params);
     ode.initData();
 
     double ti = 0.0;

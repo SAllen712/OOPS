@@ -14,7 +14,7 @@ add_custom_command(
 	       ${PARAM_SRC}
 	DEPENDS ${SETUP_SRC}
 	COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_SOURCE_DIR}/scripts/genParams.py ${SETUP_SRC}
-	COMMENT "Generating cusotm Parameters files"
+	COMMENT "Generating custom Parameters files"
 	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 	VERBATIM USES_TERMINAL
 )

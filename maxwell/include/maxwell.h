@@ -20,10 +20,10 @@ class Maxwell : public ODE {
     public:
         Maxwell(Domain& d, Solver& a);
         virtual ~Maxwell();
+	virtual void rhs(const Grid& grid, double **u, double **dudt);
         inline MaxwellParameters* getParameters(){
-            return params;
-        };
-	virtual void rhs(const Grid& grid, double **u, double **dudt); 
+		return params;
+	};	
         void setParameters (MaxwellParameters *p);
         virtual void initData();
 };
